@@ -20,4 +20,8 @@ describe 'test_scope' do
   it { should contain_file('/tmp/test').
        with_content(/^asdf$/) }
 
+
+  it { should contain_file('/tmp1/asdf') }
+  it { should contain_file('/tmp2/asdf') }
+  it { should contain_file('/tmp3/asdf') }
 end
